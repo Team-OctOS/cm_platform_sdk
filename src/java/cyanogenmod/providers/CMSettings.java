@@ -1419,6 +1419,17 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * Whether to use the custom quick unlock screen control
+         * @hide
+         */
+        public static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL =
+                "lockscreen_quick_unlock_control";
+
+        /** @hide */
+        public static final Validator LOCKSCREEN_QUICK_UNLOCK_CONTROL_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to show the alarm clock icon in the status bar.
          * 0 = 0ff, 1 = on
          */
@@ -1781,6 +1792,7 @@ public final class CMSettings {
                 CMSettings.System.T9_SEARCH_INPUT_LOCALE,
                 CMSettings.System.BLUETOOTH_ACCEPT_ALL_FILES,
                 CMSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
+                CMSettings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
                 CMSettings.System.SHOW_ALARM_ICON,
                 CMSettings.System.STATUS_BAR_IME_SWITCHER,
                 CMSettings.System.QS_SHOW_BRIGHTNESS_SLIDER,
@@ -1918,6 +1930,8 @@ public final class CMSettings {
             VALIDATORS.put(BLUETOOTH_ACCEPT_ALL_FILES, BLUETOOTH_ACCEPT_ALL_FILES_VALIDATOR);
             VALIDATORS.put(LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
                     LOCKSCREEN_PIN_SCRAMBLE_LAYOUT_VALIDATOR);
+            VALIDATORS.put(LOCKSCREEN_QUICK_UNLOCK_CONTROL,
+                    LOCKSCREEN_QUICK_UNLOCK_CONTROL_VALIDATOR);
             VALIDATORS.put(SHOW_ALARM_ICON, SHOW_ALARM_ICON_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_QUICK_QS_PULLDOWN,
