@@ -815,6 +815,7 @@ package cyanogenmod.providers {
     field public static final java.lang.String ENABLE_PEOPLE_LOOKUP = "enable_people_lookup";
     field public static final java.lang.String ENABLE_REVERSE_LOOKUP = "enable_reverse_lookup";
     field public static final java.lang.String FORWARD_LOOKUP_PROVIDER = "forward_lookup_provider";
+    field public static final java.lang.String HEADSET_CONNECT_PLAYER = "headset_connect_player";
     field public static final java.lang.String HIGH_TOUCH_SENSITIVITY_ENABLE = "high_touch_sensitivity_enable";
     field public static final java.lang.String HOME_WAKE_SCREEN = "home_wake_screen";
     field public static final java.lang.String INCREASING_RING = "increasing_ring";
@@ -872,6 +873,8 @@ package cyanogenmod.providers {
     field public static final java.lang.String VOLUME_ADJUST_SOUNDS_ENABLED = "volume_adjust_sounds_enabled";
     field public static final java.lang.String VOLUME_KEYS_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
     field public static final java.lang.String VOLUME_WAKE_SCREEN = "volume_wake_screen";
+    field public static final java.lang.String ZEN_ALLOW_LIGHTS = "allow_lights";
+    field public static final java.lang.String ZEN_PRIORITY_ALLOW_LIGHTS = "zen_priority_allow_lights";
   }
 
 }
