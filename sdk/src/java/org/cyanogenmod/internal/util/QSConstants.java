@@ -55,6 +55,7 @@ public class QSConstants {
     public static final String TILE_CAFFEINE = "caffeine";
     public static final String TILE_EDIT = "edit";
     public static final String TILE_DND = "dnd";
+    public static final String TILE_KERNEL = "kernel";
 
     public static final String DYNAMIC_TILE_NEXT_ALARM = "next_alarm";
     public static final String DYNAMIC_TILE_IME_SELECTOR = "ime_selector";
@@ -80,6 +81,7 @@ public class QSConstants {
         STATIC_TILES_AVAILABLE.add(TILE_HOTSPOT);
         STATIC_TILES_AVAILABLE.add(TILE_INVERSION);
         STATIC_TILES_AVAILABLE.add(TILE_DND);
+        STATIC_TILES_AVAILABLE.add(TILE_KERNEL);
 //        STATIC_TILES_AVAILABLE.add(TILE_NOTIFICATIONS);
 //        STATIC_TILES_AVAILABLE.add(TILE_DATA);
 //        STATIC_TILES_AVAILABLE.add(TILE_ROAMING);
