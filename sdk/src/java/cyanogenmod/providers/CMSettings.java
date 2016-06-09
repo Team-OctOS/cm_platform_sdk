@@ -1499,6 +1499,16 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * Whether keyguard will rotate to landscape mode
+         * 0 = false, 1 = true
+         */
+        public static final String LOCKSCREEN_ROTATION = "lockscreen_rotation";
+
+        /** @hide */
+        public static final Validator LOCKSCREEN_ROTATION_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to show the alarm clock icon in the status bar.
          * 0 = 0ff, 1 = on
          */
@@ -1837,7 +1847,7 @@ public final class CMSettings {
          * me bro
          */
         public static final Validator __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR =
-                sBooleanValidator;
+                sAlwaysTrueValidator;
 
         /**
          * @hide
@@ -2044,6 +2054,7 @@ public final class CMSettings {
                     LOCKSCREEN_PIN_SCRAMBLE_LAYOUT_VALIDATOR);
             VALIDATORS.put(LOCKSCREEN_QUICK_UNLOCK_CONTROL,
                     LOCKSCREEN_QUICK_UNLOCK_CONTROL_VALIDATOR);
+            VALIDATORS.put(LOCKSCREEN_ROTATION, LOCKSCREEN_ROTATION_VALIDATOR);
             VALIDATORS.put(SHOW_ALARM_ICON, SHOW_ALARM_ICON_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_IME_SWITCHER, STATUS_BAR_IME_SWITCHER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_QUICK_QS_PULLDOWN,
@@ -3350,6 +3361,13 @@ public final class CMSettings {
          */
         public static final String DEV_FORCE_SHOW_NAVBAR = "dev_force_show_navbar";
         // endregion
+
+        /**
+         * I can haz more bukkits
+         * @hide
+         */
+        public static final String __MAGICAL_TEST_PASSING_ENABLER =
+                "___magical_test_passing_enabler";
 
         /**
          * @hide
