@@ -65,6 +65,15 @@ public class CMSettingsProviderDefaultsTest extends AndroidTestCase {
                 CMSettings.System.ENABLE_REVERSE_LOOKUP,
                 "R.integer.def_reverse_lookup"));
         SYSTEM_SETTINGS_DEFAULTS.add(new Setting(
+                CMSettings.System.FORWARD_LOOKUP_PROVIDER,
+                "R.string.def_people_lookup_provider"));
+        SYSTEM_SETTINGS_DEFAULTS.add(new Setting(
+                CMSettings.System.PEOPLE_LOOKUP_PROVIDER,
+                "R.string.def_people_lookup_provider"));
+        SYSTEM_SETTINGS_DEFAULTS.add(new Setting(
+                CMSettings.System.REVERSE_LOOKUP_PROVIDER,
+                "R.string.def_reverse_lookup_provider"));
+        SYSTEM_SETTINGS_DEFAULTS.add(new Setting(
                 CMSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
                 "R.bool.def_notification_multiple_leds"));
         SYSTEM_SETTINGS_DEFAULTS.add(new Setting(

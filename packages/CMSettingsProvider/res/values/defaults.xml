@@ -76,6 +76,15 @@
     <!-- Default value of CMSettings.System.ENABLE_REVERSE_LOOKUP -->
     <integer name="def_reverse_lookup">1</integer>
 
+    <!-- Default value of CMSettings.System.FORWARD_LOOKUP_PROVIDER -->
+    <string name="def_forward_lookup_provider">Google</string>
+
+    <!-- Default value of CMSettings.System.PEOPLE_LOOKUP_PROVIDER -->
+    <string name="def_people_lookup_provider">WhitePages</string>
+
+    <!-- Default value of CMSettings.System.REVERSE_LOOKUP_PROVIDER -->
+    <string name="def_reverse_lookup_provider">WhitePages</string>
+
     <!-- Defaults for Global -->
 
     <!-- Default for CMSettings.Global.DEVICE_NAME
