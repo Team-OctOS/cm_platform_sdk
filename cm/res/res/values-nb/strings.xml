@@ -52,7 +52,7 @@
   <string name="permdesc_writeSettings">Gir en app tilgang til å endre CMs systeminnstillinger.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">endre CM sikker systeminnstillinger</string>
-  <string name="permdesc_writeSecureSettings">Gir en app tilgang til å endre CM sikkerhets-systeminnstillinger. Tilgangen bør ikke gis til normale apps.</string>
+  <string name="permdesc_writeSecureSettings">Gir en app tilgang til å endre CM sikkerhets-systeminnstillinger. Tilgangen bør ikke gis til normale apper.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">administrere permanent lager</string>
   <string name="permdesc_managePersistentStorage">Gir en app tilgang til å lese eller skrive egenskaper, som kan overleve gjenoppretting av fabrikkinnstillinger.</string>
@@ -118,14 +118,6 @@
   <string name="permlab_thirdPartyKeyguard">tredjeparts låseskjerm</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Tillater en app å brukes som en usikret låseskjerm.</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Avanserte innstillinger</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Bevegelser</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Ekstra</string>
-  <string name="touchscreen_gesture_haptic_feedback">Haptisk tilbakemelding</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Vibrere når en gest ble oppdaget</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Kunne ikke installere tema</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> kunne ikke installere</string>
