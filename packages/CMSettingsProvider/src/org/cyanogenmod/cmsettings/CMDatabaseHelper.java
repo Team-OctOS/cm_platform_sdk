@@ -23,6 +23,7 @@ import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDoneException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
 import android.os.Build;
@@ -46,7 +47,7 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
     private static final boolean LOCAL_LOGV = false;
 
     private static final String DATABASE_NAME = "cmsettings.db";
-    private static final int DATABASE_VERSION = 6;
+    private static final int DATABASE_VERSION = 7;
 
     public static class CMTableNames {
         public static final String TABLE_SYSTEM = "system";
@@ -231,6 +232,32 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
                 }, true);
             }
             upgradeVersion = 6;
+        }
+
+        if (upgradeVersion < 7) {
+            if (mUserHandle == UserHandle.USER_OWNER) {
+                db.beginTransaction();
+                SQLiteStatement stmt = null;
+                try {
+                    stmt = db.compileStatement("SELECT value FROM system WHERE name=?");
+                    stmt.bindString(1, CMSettings.System.STATUS_BAR_CLOCK);
+                    long value = stmt.simpleQueryForLong();
+
+                    if (value != 0) {
+                        stmt = db.compileStatement("UPDATE system SET value=? WHERE name=?");
+                        stmt.bindLong(1, value - 1);
+                        stmt.bindString(2, CMSettings.System.STATUS_BAR_CLOCK);
+                        stmt.execute();
+                    }
+                    db.setTransactionSuccessful();
+                } catch (SQLiteDoneException ex) {
+                    // CMSettings.System.STATUS_BAR_CLOCK is not set
+                } finally {
+                    if (stmt != null) stmt.close();
+                    db.endTransaction();
+                }
+            }
+            upgradeVersion = 7;
         }
         // *** Remember to update DATABASE_VERSION above!
 
