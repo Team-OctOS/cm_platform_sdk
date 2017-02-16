@@ -904,6 +904,16 @@ public final class CMSettings {
                 new DiscreteValueValidator(new String[] {"0", "2", "4", "5", "6"});
 
         /**
+         * Whether to sync the battery tile stile with the statusbar battery icon style
+         * @hide
+         */
+        public static final String STATUS_BAR_BATTERY_STYLE_TILE = "status_bar_battery_style_tile";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_BATTERY_STYLE_TILE_VALIDATOR =
+        sBooleanValidator;
+
+        /**
          * Status bar battery %
          * 0: Hide the battery percentage
          * 1: Display the battery percentage inside the icon
@@ -1990,6 +2000,7 @@ public final class CMSettings {
                 CMSettings.System.STATUS_BAR_CLOCK,
                 CMSettings.System.STATUS_BAR_AM_PM,
                 CMSettings.System.STATUS_BAR_BATTERY_STYLE,
+                CMSettings.System.STATUS_BAR_BATTERY_STYLE_TILE,
                 CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
                 CMSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM,
                 CMSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,
@@ -2039,6 +2050,7 @@ public final class CMSettings {
             VALIDATORS.put(STATUS_BAR_CLOCK, STATUS_BAR_CLOCK_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_AM_PM, STATUS_BAR_AM_PM_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BATTERY_STYLE, STATUS_BAR_BATTERY_STYLE_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_BATTERY_STYLE_TILE, STATUS_BAR_BATTERY_STYLE_TILE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_BATTERY_PERCENT,
                     STATUS_BAR_SHOW_BATTERY_PERCENT_VALIDATOR);
             VALIDATORS.put(INCREASING_RING, INCREASING_RING_VALIDATOR);

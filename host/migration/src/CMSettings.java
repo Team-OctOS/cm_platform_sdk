@@ -90,6 +90,12 @@ public final class CMSettings {
         public static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
 
         /**
+         * Whether to sync the battery tile stile with the statusbar battery icon style
+         * @hide
+         */
+        public static final String STATUS_BAR_BATTERY_STYLE_TILE = "status_bar_battery_style_tile";
+
+        /**
          * Status bar battery %
          * 0: Hide the battery percentage
          * 1: Display the battery percentage inside the icon
@@ -730,6 +736,7 @@ public final class CMSettings {
                 CMSettings.System.STATUS_BAR_CLOCK,
                 CMSettings.System.STATUS_BAR_AM_PM,
                 CMSettings.System.STATUS_BAR_BATTERY_STYLE,
+                CMSettings.System.STATUS_BAR_BATTERY_STYLE_TILE,
                 CMSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
                 CMSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM,
                 CMSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,

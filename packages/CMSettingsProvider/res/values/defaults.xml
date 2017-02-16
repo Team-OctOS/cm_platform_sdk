@@ -61,6 +61,9 @@
          -->
     <integer name="def_battery_style">0</integer>
 
+    <!-- Default for CMSettings.System.STATUS_BAR_BATTERY_STYLE_TILE -->
+    <bool name="def_battery_style_tile">true</bool>
+
     <!-- Default for CMSettings.Secure.QS_USE_MAIN_TILES -->
     <bool name="def_sysui_qs_main_tiles">true</bool>
 
